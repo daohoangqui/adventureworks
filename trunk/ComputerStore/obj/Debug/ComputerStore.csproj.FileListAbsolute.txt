@@ -35,3 +35,23 @@ D:\Do an Nhom\Computer Store (20-10-2009)\ComputerStore(20-10)\ComputerStore\obj
 D:\Do an Nhom\Computer Store (20-10-2009)\ComputerStore(20-10)\ComputerStore\obj\Debug\ComputerStore.csproj.GenerateResource.Cache
 D:\Do an Nhom\Computer Store (20-10-2009)\ComputerStore(20-10)\ComputerStore\bin\Debug\ComputerStore.exe.config
 D:\Do an Nhom\Computer Store (20-10-2009)\ComputerStore(20-10)\ComputerStore\obj\Debug\ComputerStore.Views.frmMain.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\bin\Debug\ComputerStore.exe.config
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.exe
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.pdb
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\bin\Debug\ComputerStore.exe
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\bin\Debug\ComputerStore.pdb
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\bin\Debug\DevComponents.DotNetBar2.dll
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\bin\Debug\DevComponents.DotNetBar2.xml
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ResolveAssemblyReference.cache
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmMain.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmProduct.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmProductCategories.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmCustomer.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmDepartment.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmEmployee.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmPrePurchaseOrder.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmPurchase.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmSalesOrder.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Properties.Resources.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmVendor.resources
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.csproj.GenerateResource.Cache
