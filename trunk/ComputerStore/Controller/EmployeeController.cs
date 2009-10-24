@@ -54,8 +54,6 @@ namespace ComputerStore.Controller
         }
         public void luuThayDoi()
         {
-            
-            
             tableAdapterManager.UpdateAll(this.dataset);
         }
         public void hienThiComboBox(ComboBox cmb)
