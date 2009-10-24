@@ -40,8 +40,8 @@
             System.Windows.Forms.Label salaryLabel;
             System.Windows.Forms.Label departmentIDLabel;
             System.Windows.Forms.Label activeLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTest));
             System.Windows.Forms.Label employeeIDLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTest));
             this.computerStoreDataSet = new ComputerStore.Data.ComputerStoreDataSet();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeTableAdapter = new ComputerStore.Data.ComputerStoreDataSetTableAdapters.EmployeeTableAdapter();
@@ -59,6 +59,7 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.fullNameTextBox = new System.Windows.Forms.TextBox();
             this.lastNameTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
@@ -75,7 +76,6 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.employeeIDTextBox = new System.Windows.Forms.TextBox();
             fullNameLabel = new System.Windows.Forms.Label();
             lastNameLabel = new System.Windows.Forms.Label();
@@ -196,6 +196,15 @@
             activeLabel.TabIndex = 21;
             activeLabel.Text = "Active:";
             // 
+            // employeeIDLabel
+            // 
+            employeeIDLabel.AutoSize = true;
+            employeeIDLabel.Location = new System.Drawing.Point(493, 79);
+            employeeIDLabel.Name = "employeeIDLabel";
+            employeeIDLabel.Size = new System.Drawing.Size(70, 13);
+            employeeIDLabel.TabIndex = 24;
+            employeeIDLabel.Text = "Employee ID:";
+            // 
             // computerStoreDataSet
             // 
             this.computerStoreDataSet.DataSetName = "ComputerStoreDataSet";
@@ -295,6 +304,7 @@
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -355,6 +365,15 @@
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(50, 22);
+            this.toolStripButton1.Text = "save";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // fullNameTextBox
             // 
@@ -483,24 +502,6 @@
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Address";
             this.dataGridViewTextBoxColumn3.HeaderText = "Address";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(50, 22);
-            this.toolStripButton1.Text = "save";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // employeeIDLabel
-            // 
-            employeeIDLabel.AutoSize = true;
-            employeeIDLabel.Location = new System.Drawing.Point(493, 79);
-            employeeIDLabel.Name = "employeeIDLabel";
-            employeeIDLabel.Size = new System.Drawing.Size(70, 13);
-            employeeIDLabel.TabIndex = 24;
-            employeeIDLabel.Text = "Employee ID:";
             // 
             // employeeIDTextBox
             // 

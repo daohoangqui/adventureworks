@@ -33,28 +33,44 @@ namespace ComputerStore.Views
             //this.tableAdapterManager.UpdateAll(this.computerStoreDataSet);
             //return;
 
-            ComputerStoreDataSet.EmployeeAddressDataTable deletedChildRecords = (ComputerStoreDataSet.EmployeeAddressDataTable)computerStoreDataSet.EmployeeAddress.GetChanges(DataRowState.Deleted);
-            ComputerStoreDataSet.EmployeeAddressDataTable newChildRecords = (ComputerStoreDataSet.EmployeeAddressDataTable)computerStoreDataSet.EmployeeAddress.GetChanges(DataRowState.Added);
-            ComputerStoreDataSet.EmployeeAddressDataTable modifiedChildRecords = (ComputerStoreDataSet.EmployeeAddressDataTable)computerStoreDataSet.EmployeeAddress.GetChanges(DataRowState.Modified);
+            ComputerStoreDataSet.EmployeeAddressDataTable deletedEmployeeAddress = (ComputerStoreDataSet.EmployeeAddressDataTable)computerStoreDataSet.EmployeeAddress.GetChanges(DataRowState.Deleted);
+            ComputerStoreDataSet.EmployeeAddressDataTable newEmployeeAddress = (ComputerStoreDataSet.EmployeeAddressDataTable)computerStoreDataSet.EmployeeAddress.GetChanges(DataRowState.Added);
+            ComputerStoreDataSet.EmployeeAddressDataTable modifiedEmployeeAddress = (ComputerStoreDataSet.EmployeeAddressDataTable)computerStoreDataSet.EmployeeAddress.GetChanges(DataRowState.Modified);
+
+            ComputerStoreDataSet.EmployeeDataTable deletedEmployee = (ComputerStoreDataSet.EmployeeDataTable)computerStoreDataSet.Employee.GetChanges(DataRowState.Deleted);
+            ComputerStoreDataSet.EmployeeDataTable newEmployee = (ComputerStoreDataSet.EmployeeDataTable)computerStoreDataSet.Employee.GetChanges(DataRowState.Added);
+            ComputerStoreDataSet.EmployeeDataTable modifiedEmployee = (ComputerStoreDataSet.EmployeeDataTable)computerStoreDataSet.Employee.GetChanges(DataRowState.Modified);
 
             try
             {
-                // xoa cac dong trong bang con
-                if (deletedChildRecords != null)
+                // Them cac dong trong bang cha
+                if (newEmployee != null)
                 {
-                    employeeAddressTableAdapter.Update(deletedChildRecords);
+                    employeeTableAdapter.Update(newEmployee);
                 }
-                // update (them xoa sua) bang cha
-                employeeTableAdapter.Update(computerStoreDataSet.Employee);
-                // them dong trong bang con
-                if (newChildRecords != null)
+                // xoa cac dong trong bang con
+                if (deletedEmployeeAddress != null)
                 {
-                    employeeAddressTableAdapter.Update(newChildRecords);
+                    employeeAddressTableAdapter.Update(deletedEmployeeAddress);
+                    MessageBox.Show("Da xoa cac dong trong bang con roi do pa");
+                }
+                this.tableAdapterManager.UpdateAll(computerStoreDataSet);
+                // Xoa cac dong trong bang cha
+                if (deletedEmployee != null)
+                {
+
+                    employeeTableAdapter.Update(deletedEmployee);
+                }
+
+                // them dong trong bang con
+                if (newEmployeeAddress != null)
+                {
+                    employeeAddressTableAdapter.Update(newEmployeeAddress);
                 }
                 // sua bang con
-                if (modifiedChildRecords != null)
+                if (modifiedEmployeeAddress != null)
                 {
-                    employeeAddressTableAdapter.Update(modifiedChildRecords);
+                    employeeAddressTableAdapter.Update(modifiedEmployeeAddress);
                 }
                 computerStoreDataSet.AcceptChanges();
             }
@@ -64,19 +80,24 @@ namespace ComputerStore.Views
             }
             finally
             {
-                if (deletedChildRecords != null)
+                if (deletedEmployeeAddress != null)
                 {
-                    deletedChildRecords.Dispose();
+                    deletedEmployeeAddress.Dispose();
                 }
-                if (newChildRecords != null)
+                if (newEmployeeAddress != null)
                 {
-                    newChildRecords.Dispose();
+                    newEmployeeAddress.Dispose();
                 }
-                if (modifiedChildRecords != null)
+                if (modifiedEmployeeAddress != null)
                 {
-                    modifiedChildRecords.Dispose();
+                    modifiedEmployeeAddress.Dispose();
                 }
             }
+        }
+
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        {
+            //this.employeeAddressDataGridView.se
         }
     }
 }
