@@ -29,26 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployee));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bnEmployee = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.EmployeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.txtLastName = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.nudLuong = new System.Windows.Forms.NumericUpDown();
@@ -77,10 +67,6 @@
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
             this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.columnAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnEmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnEmployeeAdressID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeAddressBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
             this.dataGridViewX3 = new DevComponents.DotNetBar.Controls.DataGridViewX();
@@ -97,14 +83,25 @@
             this.columnStartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnEndDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.EmployeeAddressBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.EmployeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.EmployeePayHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.EmployeeDepartmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DepartmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.computerStoreDataSet = new ComputerStore.Data.ComputerStoreDataSet();
-            this.employeeAddressTableAdapter = new ComputerStore.Data.ComputerStoreDataSetTableAdapters.EmployeeAddressTableAdapter();
+            this.columnEmployeeAdressID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnEmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bnEmployee)).BeginInit();
             this.bnEmployee.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeeBindingSource)).BeginInit();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpNgayVaoLam)).BeginInit();
@@ -113,15 +110,15 @@
             this.tabControl1.SuspendLayout();
             this.tabControlPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeeAddressBindingSource)).BeginInit();
             this.tabControlPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX3)).BeginInit();
             this.tabControlPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeAddressBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeePayHistoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeDepartmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DepartmentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.computerStoreDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // bnEmployee
@@ -156,48 +153,12 @@
             this.bnEmployee.TabIndex = 0;
             this.bnEmployee.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
@@ -218,56 +179,10 @@
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // saveToolStripButton
-            // 
-            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
-            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveToolStripButton.Text = "&Save";
-            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
-            // 
-            // printToolStripButton
-            // 
-            this.printToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
-            this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripButton.Name = "printToolStripButton";
-            this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.printToolStripButton.Text = "&Print";
-            // 
-            // helpToolStripButton
-            // 
-            this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
-            this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.helpToolStripButton.Name = "helpToolStripButton";
-            this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.helpToolStripButton.Text = "He&lp";
             // 
             // groupPanel1
             // 
@@ -329,6 +244,7 @@
             this.txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.EmployeeBindingSource, "LastName", true));
             this.txtLastName.Location = new System.Drawing.Point(231, 32);
             this.txtLastName.Name = "txtLastName";
+            this.txtLastName.ReadOnly = true;
             this.txtLastName.Size = new System.Drawing.Size(72, 23);
             this.txtLastName.TabIndex = 26;
             // 
@@ -373,6 +289,8 @@
             // 
             // cmbPhongBan
             // 
+            this.cmbPhongBan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbPhongBan.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbPhongBan.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.EmployeeBindingSource, "DepartmentID", true));
             this.cmbPhongBan.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbPhongBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -390,12 +308,14 @@
             this.labelX10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX10.Location = new System.Drawing.Point(412, 67);
             this.labelX10.Name = "labelX10";
-            this.labelX10.Size = new System.Drawing.Size(57, 15);
+            this.labelX10.Size = new System.Drawing.Size(57, 13);
             this.labelX10.TabIndex = 20;
             this.labelX10.Text = "Phòng Ban";
             // 
             // txtDiaChi
             // 
+            this.txtDiaChi.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtDiaChi.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
             // 
             // 
             // 
@@ -414,7 +334,7 @@
             this.labelX8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX8.Location = new System.Drawing.Point(430, 4);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(39, 15);
+            this.labelX8.Size = new System.Drawing.Size(39, 13);
             this.labelX8.TabIndex = 18;
             this.labelX8.Text = "Địa Chỉ";
             // 
@@ -425,7 +345,7 @@
             this.labelX9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX9.Location = new System.Drawing.Point(436, 97);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(33, 15);
+            this.labelX9.Size = new System.Drawing.Size(33, 13);
             this.labelX9.TabIndex = 16;
             this.labelX9.Text = "Lương";
             // 
@@ -479,7 +399,7 @@
             this.labelX7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX7.Location = new System.Drawing.Point(394, 35);
             this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(75, 15);
+            this.labelX7.Size = new System.Drawing.Size(75, 13);
             this.labelX7.TabIndex = 12;
             this.labelX7.Text = "Ngày Vào Làm";
             // 
@@ -503,7 +423,7 @@
             this.labelX6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX6.Location = new System.Drawing.Point(13, 128);
             this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(72, 15);
+            this.labelX6.Size = new System.Drawing.Size(72, 13);
             this.labelX6.TabIndex = 9;
             this.labelX6.Text = "Số Điện Thoại";
             // 
@@ -514,7 +434,7 @@
             this.labelX5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX5.Location = new System.Drawing.Point(55, 97);
             this.labelX5.Name = "labelX5";
-            this.labelX5.Size = new System.Drawing.Size(30, 15);
+            this.labelX5.Size = new System.Drawing.Size(30, 13);
             this.labelX5.TabIndex = 8;
             this.labelX5.Text = "Email";
             // 
@@ -525,7 +445,7 @@
             // 
             this.dtpNgaySinh.BackgroundStyle.Class = "DateTimeInputBackground";
             this.dtpNgaySinh.ButtonDropDown.Visible = true;
-            this.dtpNgaySinh.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.EmployeeBindingSource, "Birthdate", true));
+            this.dtpNgaySinh.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.EmployeeBindingSource, "Birthdate", true));
             this.dtpNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgaySinh.Location = new System.Drawing.Point(104, 66);
             // 
@@ -568,7 +488,7 @@
             this.labelX4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX4.Location = new System.Drawing.Point(32, 67);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(53, 15);
+            this.labelX4.Size = new System.Drawing.Size(53, 13);
             this.labelX4.TabIndex = 6;
             this.labelX4.Text = "Ngày Sinh";
             // 
@@ -602,7 +522,7 @@
             this.labelX3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX3.Location = new System.Drawing.Point(38, 35);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(47, 15);
+            this.labelX3.Size = new System.Drawing.Size(47, 13);
             this.labelX3.TabIndex = 4;
             this.labelX3.Text = "Giới Tính";
             // 
@@ -626,7 +546,7 @@
             this.labelX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX2.Location = new System.Drawing.Point(36, 6);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(49, 15);
+            this.labelX2.Size = new System.Drawing.Size(49, 13);
             this.labelX2.TabIndex = 2;
             this.labelX2.Text = "Họ và tên";
             // 
@@ -683,45 +603,24 @@
             this.dataGridViewX1.AutoGenerateColumns = false;
             this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewX1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.columnAddress,
+            this.columnEmployeeAdressID,
             this.columnEmployeeID,
-            this.columnEmployeeAdressID});
+            this.columnAddress});
             this.dataGridViewX1.DataSource = this.EmployeeAddressBindingSource;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewX1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dataGridViewX1.Location = new System.Drawing.Point(1, 1);
             this.dataGridViewX1.Name = "dataGridViewX1";
             this.dataGridViewX1.Size = new System.Drawing.Size(782, 341);
             this.dataGridViewX1.TabIndex = 0;
-            // 
-            // columnAddress
-            // 
-            this.columnAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.columnAddress.DataPropertyName = "Address";
-            this.columnAddress.HeaderText = "Địa chỉ";
-            this.columnAddress.Name = "columnAddress";
-            // 
-            // columnEmployeeID
-            // 
-            this.columnEmployeeID.DataPropertyName = "EmployeeID";
-            this.columnEmployeeID.HeaderText = "Employee ID";
-            this.columnEmployeeID.Name = "columnEmployeeID";
-            this.columnEmployeeID.Visible = false;
-            // 
-            // columnEmployeeAdressID
-            // 
-            this.columnEmployeeAdressID.DataPropertyName = "EmployeeAdressID";
-            this.columnEmployeeAdressID.HeaderText = "Employee Address ID";
-            this.columnEmployeeAdressID.Name = "columnEmployeeAdressID";
-            this.columnEmployeeAdressID.Visible = false;
             // 
             // tabItem1
             // 
@@ -755,14 +654,14 @@
             this.columnEmployeeID3,
             this.columnOldSalary,
             this.columnChangeDate});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewX3.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX3.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewX3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewX3.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dataGridViewX3.Location = new System.Drawing.Point(1, 1);
@@ -836,14 +735,14 @@
             this.columnDepartmentID,
             this.columnStartDate,
             this.columnEndDate});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewX2.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX2.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewX2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewX2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dataGridViewX2.Location = new System.Drawing.Point(1, 1);
@@ -898,14 +797,107 @@
             this.tabItem2.Name = "tabItem2";
             this.tabItem2.Text = "Lịch sử phòng ban";
             // 
-            // computerStoreDataSet
+            // bindingNavigatorAddNewItem
             // 
-            this.computerStoreDataSet.DataSetName = "ComputerStoreDataSet";
-            this.computerStoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
             // 
-            // employeeAddressTableAdapter
+            // bindingNavigatorDeleteItem
             // 
-            this.employeeAddressTableAdapter.ClearBeforeFill = true;
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // saveToolStripButton
+            // 
+            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
+            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripButton.Name = "saveToolStripButton";
+            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Text = "&Save";
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
+            // 
+            // printToolStripButton
+            // 
+            this.printToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.printToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripButton.Image")));
+            this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripButton.Name = "printToolStripButton";
+            this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.printToolStripButton.Text = "&Print";
+            // 
+            // helpToolStripButton
+            // 
+            this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
+            this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.helpToolStripButton.Name = "helpToolStripButton";
+            this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.helpToolStripButton.Text = "He&lp";
+            // 
+            // columnEmployeeAdressID
+            // 
+            this.columnEmployeeAdressID.DataPropertyName = "EmployeeAdressID";
+            this.columnEmployeeAdressID.HeaderText = "Employee Address ID";
+            this.columnEmployeeAdressID.Name = "columnEmployeeAdressID";
+            // 
+            // columnEmployeeID
+            // 
+            this.columnEmployeeID.DataPropertyName = "EmployeeID";
+            this.columnEmployeeID.HeaderText = "Employee ID";
+            this.columnEmployeeID.Name = "columnEmployeeID";
+            // 
+            // columnAddress
+            // 
+            this.columnAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.columnAddress.DataPropertyName = "Address";
+            this.columnAddress.HeaderText = "Địa chỉ";
+            this.columnAddress.Name = "columnAddress";
             // 
             // frmEmployee
             // 
@@ -921,7 +913,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bnEmployee)).EndInit();
             this.bnEmployee.ResumeLayout(false);
             this.bnEmployee.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeeBindingSource)).EndInit();
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudLuong)).EndInit();
@@ -931,15 +922,15 @@
             this.tabControl1.ResumeLayout(false);
             this.tabControlPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeeAddressBindingSource)).EndInit();
             this.tabControlPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX3)).EndInit();
             this.tabControlPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeAddressBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeePayHistoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeDepartmentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DepartmentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.computerStoreDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -997,15 +988,10 @@
         private System.Windows.Forms.BindingSource EmployeeAddressBindingSource;
         private System.Windows.Forms.BindingSource EmployeePayHistoryBindingSource;
         private System.Windows.Forms.BindingSource EmployeeDepartmentBindingSource;
-        private ComputerStore.Data.ComputerStoreDataSet computerStoreDataSet;
         private DevComponents.Editors.ComboItem NamItem;
         private DevComponents.Editors.ComboItem NuItem;
         private System.Windows.Forms.BindingSource DepartmentBindingSource;
-        private ComputerStore.Data.ComputerStoreDataSetTableAdapters.EmployeeAddressTableAdapter employeeAddressTableAdapter;
         private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnAddress;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnEmployeeID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnEmployeeAdressID;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnEmployeeDepartmentHistoryId;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnEmployeeID2;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnDepartmentID;
@@ -1016,6 +1002,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn columnOldSalary;
         private System.Windows.Forms.DataGridViewTextBoxColumn columnChangeDate;
         private DevComponents.DotNetBar.Controls.TextBoxX txtLastName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnEmployeeAdressID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnEmployeeID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnAddress;
     }
 }
 

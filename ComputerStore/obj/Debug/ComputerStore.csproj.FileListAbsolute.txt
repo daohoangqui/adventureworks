@@ -55,3 +55,4 @@ E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\Computer
 E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Properties.Resources.resources
 E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmVendor.resources
 E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.csproj.GenerateResource.Cache
+E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmTest.resources
