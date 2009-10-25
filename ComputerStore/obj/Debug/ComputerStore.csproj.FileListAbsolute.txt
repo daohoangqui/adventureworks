@@ -56,3 +56,23 @@ E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\Computer
 E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmVendor.resources
 E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.csproj.GenerateResource.Cache
 E:\LEARNING\ChuyenDeNNLT3\Project\ConputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmTest.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\bin\Debug\ComputerStore.exe.config
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\bin\Debug\ComputerStore.exe
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\bin\Debug\ComputerStore.pdb
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\bin\Debug\DevComponents.DotNetBar2.dll
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ResolveAssemblyReference.cache
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmMain.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmProduct.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmProductCategories.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmCustomer.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmDepartment.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmEmployee.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmPrePurchaseOrder.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmPurchase.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmSalesOrder.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Properties.Resources.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmTest.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmVendor.resources
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.csproj.GenerateResource.Cache
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.exe
+D:\Do an nhom\Do an NNLT3\ComputerStore\ComputerStore\obj\Debug\ComputerStore.pdb
