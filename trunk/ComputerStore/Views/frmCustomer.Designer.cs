@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomer));
             this.CustomerBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -50,7 +51,6 @@
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.chkActive = new DevComponents.DotNetBar.Controls.CheckBoxX();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.CustomerBindingNavigator)).BeginInit();
             this.CustomerBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
@@ -98,7 +98,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(36, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -220,35 +220,39 @@
             // 
             // labelX1
             // 
+            this.labelX1.AutoSize = true;
             this.labelX1.Location = new System.Drawing.Point(36, 45);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(40, 23);
+            this.labelX1.Size = new System.Drawing.Size(38, 15);
             this.labelX1.TabIndex = 9;
             this.labelX1.Text = "Họ tên:";
             // 
             // labelX2
             // 
+            this.labelX2.AutoSize = true;
             this.labelX2.Location = new System.Drawing.Point(36, 81);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(60, 23);
+            this.labelX2.Size = new System.Drawing.Size(55, 15);
             this.labelX2.TabIndex = 10;
             this.labelX2.Text = "Điện thoại:";
             // 
             // labelX3
             // 
+            this.labelX3.AutoSize = true;
             this.labelX3.Location = new System.Drawing.Point(36, 121);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(53, 23);
+            this.labelX3.Size = new System.Drawing.Size(39, 15);
             this.labelX3.TabIndex = 11;
             this.labelX3.Text = "Địa chỉ:";
             // 
             // chkActive
             // 
-            this.chkActive.DataBindings.Add("Checked",this.customerBindingSource,"Active",true);
+            this.chkActive.AutoSize = true;
+            this.chkActive.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.customerBindingSource, "Active", true));
             this.chkActive.Location = new System.Drawing.Point(36, 181);
             this.chkActive.Name = "chkActive";
             this.chkActive.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.chkActive.Size = new System.Drawing.Size(106, 23);
+            this.chkActive.Size = new System.Drawing.Size(99, 15);
             this.chkActive.TabIndex = 12;
             this.chkActive.Text = "Ngưng theo dõi:";
             // 
@@ -265,6 +269,7 @@
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.CustomerBindingNavigator);
+            this.DoubleBuffered = true;
             this.Name = "frmCustomer";
             this.Text = "Khach Hang";
             this.Load += new System.EventHandler(this.frmCustomer_Load);
