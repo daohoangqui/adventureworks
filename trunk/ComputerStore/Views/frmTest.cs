@@ -58,7 +58,6 @@ namespace ComputerStore.Views
                 // Xoa cac dong trong bang cha
                 if (deletedEmployee != null)
                 {
-
                     employeeTableAdapter.Update(deletedEmployee);
                 }
 
@@ -66,6 +65,7 @@ namespace ComputerStore.Views
                 if (newEmployeeAddress != null)
                 {
                     employeeAddressTableAdapter.Update(newEmployeeAddress);
+                    MessageBox.Show("Them cac dong trong bang con");
                 }
                 // sua bang con
                 if (modifiedEmployeeAddress != null)
