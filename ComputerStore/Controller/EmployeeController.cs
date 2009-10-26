@@ -25,6 +25,11 @@ namespace ComputerStore.Controller
             employeeAddressTableAdapter = new EmployeeAddressTableAdapter();
             employeePayHistoryTableAdapter = new EmployeePayHistoryTableAdapter();
             employeeDepartmentHistoryTableAdapter = new EmployeeDepartmentHistoryTableAdapter();
+
+            employeeTableAdapter.ClearBeforeFill = true;
+            employeeAddressTableAdapter.ClearBeforeFill = true;
+            employeePayHistoryTableAdapter.ClearBeforeFill = true;
+            employeeDepartmentHistoryTableAdapter.ClearBeforeFill = true;
             
             this.tableAdapterManager.BackupDataSetBeforeUpdate = true;
             this.tableAdapterManager.UpdateOrder = TableAdapterManager.UpdateOrderOption.UpdateInsertDelete;

@@ -13,6 +13,7 @@ namespace ComputerStore.Views
     {
         ComputerStore.Controller.EmployeeController EmployeeController = new ComputerStore.Controller.EmployeeController();
         ComputerStore.Controller.DepartmentController DepartmentController = new ComputerStore.Controller.DepartmentController();
+        bool flag_save_header = false;
         public frmEmployee()
         {
             InitializeComponent();
@@ -36,11 +37,6 @@ namespace ComputerStore.Views
                 EmployeeController.luuThayDoi();
             }
         }    
-        // Ham xu ly khi form load
-        private void frmEmployee_Load(object sender, EventArgs e)
-        {
-
-        }
         // Ham xu ly nut Add
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
@@ -50,7 +46,6 @@ namespace ComputerStore.Views
             this.bindingNavigatorMoveNextItem.Enabled = false;
             this.bindingNavigatorMovePreviousItem.Enabled = false;
             this.bindingNavigatorPositionItem.Enabled = false;
-
             this.lamSachForm();
         }
 
@@ -146,6 +141,23 @@ namespace ComputerStore.Views
                 return false;
             }
             return true;
+        }
+        private void dgEmployeeAddress_Enter(object sender, EventArgs e)
+        {
+            if (this.kiemTraForm())
+            {
+                // them LastName vao 
+                string temp = txtHovaTen.Text.Trim();
+                string name = temp.Substring((temp.LastIndexOf(" ")) + 1);
+                txtLastName.Text = name;
+                this.Validate();
+                this.EmployeeBindingSource.EndEdit();
+                this.EmployeeDepartmentBindingSource.EndEdit();
+                this.EmployeePayHistoryBindingSource.EndEdit();
+                this.EmployeeAddressBindingSource.EndEdit();
+                EmployeeController.luuThayDoi();
+                this.flag_save_header = true;
+            }
         }
     }
 }
