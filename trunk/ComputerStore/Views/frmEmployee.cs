@@ -23,18 +23,25 @@ namespace ComputerStore.Views
         // Ham xu ly nut Save
         private void saveToolStripButton_Click(object sender, EventArgs e)
         {
-            if (this.kiemTraForm())
+            try
             {
-                // them LastName vao 
-                string temp = txtHovaTen.Text.Trim();
-                string name = temp.Substring((temp.LastIndexOf(" ")) + 1);
-                txtLastName.Text = name;
-                this.Validate();
-                this.EmployeeBindingSource.EndEdit();
-                this.EmployeeDepartmentBindingSource.EndEdit();
-                this.EmployeePayHistoryBindingSource.EndEdit();
-                this.EmployeeAddressBindingSource.EndEdit();
-                EmployeeController.luuThayDoi();
+                if (this.kiemTraForm())
+                {
+                    // them LastName vao 
+                    string temp = txtHovaTen.Text.Trim();
+                    string name = temp.Substring((temp.LastIndexOf(" ")) + 1);
+                    txtLastName.Text = name;
+                    this.Validate();
+                    this.EmployeeBindingSource.EndEdit();
+                    this.EmployeeDepartmentBindingSource.EndEdit();
+                    this.EmployeePayHistoryBindingSource.EndEdit();
+                    this.EmployeeAddressBindingSource.EndEdit();
+                    EmployeeController.luuThayDoi();
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show("[ Lỗi ]:\tDữ liệu nhập vào vượt quá độ dài cho phép.\n\tHãy kiẻm tra lại!"/*+ex.ToString()*/);
             }
         }    
         // Ham xu ly nut Add
