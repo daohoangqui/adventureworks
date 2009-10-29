@@ -100,7 +100,6 @@ E:\LEARNING\ChuyenDeNNLT3\Project\ComputerStore\ComputerStore\obj\Debug\Computer
 E:\LEARNING\ChuyenDeNNLT3\Project\ComputerStore\ComputerStore\obj\Debug\ComputerStore.pdb
 E:\LEARNING\ChuyenDeNNLT3\Project\ComputerStore\ComputerStore\bin\Debug\ComputerStore.exe
 E:\LEARNING\ChuyenDeNNLT3\Project\ComputerStore\ComputerStore\bin\Debug\ComputerStore.pdb
-E:\LEARNING\ChuyenDeNNLT3\Project\ComputerStore\ComputerStore\bin\Debug\DevComponents.DotNetBar2.dll
 E:\LEARNING\ChuyenDeNNLT3\Project\ComputerStore\ComputerStore\bin\Debug\DevComponents.DotNetBar2.xml
 E:\LEARNING\ChuyenDeNNLT3\Project\ComputerStore\ComputerStore\obj\Debug\ResolveAssemblyReference.cache
 E:\LEARNING\ChuyenDeNNLT3\Project\ComputerStore\ComputerStore\obj\Debug\ComputerStore.Views.frmMain.resources
